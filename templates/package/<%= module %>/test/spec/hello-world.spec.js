@@ -5,7 +5,7 @@ var expect = chai.expect;
 
 var task = require('../../lib/tasks/hello-world');
 
-describe('hello-world', function() {
+describe('task:hello-world', function() {
 
 	it('should have a description', function() {
 		expect(task.description).to.be.a('string');
