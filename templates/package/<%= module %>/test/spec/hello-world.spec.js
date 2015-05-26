@@ -3,9 +3,11 @@
 var chai = require('chai');
 var expect = chai.expect;
 
-var task = require('../../lib/tasks/hello-world');
-
 describe('task:hello-world', function() {
+	var task;
+	before(function() {
+		task = require('../../lib/tasks/hello-world');
+	});
 
 	it('should have a description', function() {
 		expect(task.description).to.be.a('string');
