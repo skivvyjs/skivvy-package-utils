@@ -4,10 +4,31 @@ var chai = require('chai');
 var expect = chai.expect;
 
 describe('task:hello-world', function() {
+	var mockApi;
 	var task;
 	before(function() {
+		mockApi = createMockApi();
 		task = require('../../lib/tasks/hello-world');
 	});
+
+	function createMockApi() {
+		return {
+			errors: {
+				TaskError: createCustomError('TaskError')
+			}
+		};
+
+		function createCustomError(type) {
+			function CustomError(message) {
+				this.message = message;
+			}
+
+			CustomError.prototype = Object.create(Error.prototype);
+			CustomError.prototype.name = type;
+
+			return CustomError;
+		}
+	}
 
 	it('should have a description', function() {
 		expect(task.description).to.be.a('string');
@@ -26,7 +47,7 @@ describe('task:hello-world', function() {
 			logOutput.push(string);
 		};
 		try {
-			task({ user: 'world' });
+			task.call(mockApi, { user: 'world' });
 		} finally {
 			console.log = originalLog;
 		}
