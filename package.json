@@ -1,6 +1,6 @@
 {
   "name": "@skivvy/skivvy-package-utils",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Create Skivvy tasks and packages",
   "directories": {
     "lib": "lib"
