@@ -1,0 +1,31 @@
+{
+  "name": "<%= module %>",
+  "version": "0.0.1",
+  "description": "<%= description %>",
+  "main": "index.js",
+  "directories": {
+  	"lib": "lib",
+  	"test": "test"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "test"
+  ],
+  "scripts": {
+    "prepublish": "npm test",
+    "test": "eslint index.js lib test && mocha --reporter spec"
+  },
+  "keywords": [
+    "skivvy-package"
+  ],
+  "author": "<%= author %>",
+  "license": "<%= license %>",
+  "dependencies": {},
+  "devDependencies": {
+    "@skivvy/project-base": "latest",
+    "eslint": "latest",
+    "mocha": "^2.0.0",
+    "chai": "^2.0.0"
+  }
+}

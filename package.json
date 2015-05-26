@@ -1,0 +1,41 @@
+{
+  "name": "@skivvy/skivvy-package-utils",
+  "version": "0.0.1",
+  "description": "Create Skivvy tasks and packages",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "templates"
+  ],
+  "scripts": {
+    "prepublish": "npm test",
+    "test": "eslint index.js lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skivvyjs/skivvy-package-utils.git"
+  },
+  "keywords": [
+    "skivvy",
+    "factory",
+    "package",
+    "template"
+  ],
+  "author": "Tim Kendrick <timkendrick@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skivvyjs/skivvy-package-utils/issues"
+  },
+  "homepage": "https://github.com/skivvyjs/skivvy-package-utils#readme",
+  "dependencies": {
+    "skivvy-factory": "^0.1.1",
+    "validate-npm-package-name": "^2.2.0"
+  },
+  "devDependencies": {
+    "@skivvy/project-base": "latest",
+    "eslint": "latest"
+  }
+}
