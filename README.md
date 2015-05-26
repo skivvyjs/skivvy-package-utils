@@ -32,6 +32,13 @@ This package is intended to help create tasks and packages for the [Skivvy](http
 
 Create a Skivvy task
 
+#### Usage:
+
+```bash
+skivvy run create-task
+```
+
+
 #### Configuration settings:
 
 | Name | Type | Required | Default | Description |
@@ -45,6 +52,13 @@ Create a Skivvy task
 ### `create-package`
 
 Create a Skivvy package
+
+#### Usage:
+
+```bash
+skivvy run create-package
+```
+
 
 #### Configuration settings:
 

@@ -30,6 +30,13 @@ This package allows you to <%= description.charAt(0).toLowerCase() + description
 
 Example task
 
+#### Usage:
+
+```bash
+skivvy run hello-world
+```
+
+
 #### Configuration settings:
 
 | Name | Type | Required | Default | Description |
