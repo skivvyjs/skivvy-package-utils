@@ -1,10 +1,11 @@
 'use strict';
 
 module.exports = function(config) {
-	throw new Error('Not implemented');
+	console.log('Hello, ' + config.user + '!');
 };
 
 module.exports.defaults = {
+	user: 'world'
 };
 
 module.exports.description = '<%= description %>';
